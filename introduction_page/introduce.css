@@ -1,137 +1,98 @@
-* {
-  margin: 0px;
-  text-decoration: none;
-  border-collapse: none;
-  list-style: none;
-  padding: 0px;
-  color: black;
-  font-family: "Noto Sans KR", sans-serif;
-}
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUFS SUMMER HACKATHON</title>
+    <link rel="stylesheet" type="text/css" href="introduce.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="menu-bar">
+      <div class="index">
+        <div class="img">
+          <img id="rabbit-img" src="hufs_rabbit.jpg">
+        </div>
+        <h3 class="click">ABOUT</h3>
+        <h3 class="click">TYPES</h3>
+      </div>
+    </nav>
 
-body {
-  background-color: #efe7e3;
-}
 
-#ser_img {
-  margin-left: 10px;
-  display: block;
-  height: 30px;
-  width: 30px;
-  object-fit: cover;
-}
+    <div id="about-us" class="frame">
+      <div class="profile-section">
+        <img id="profile-picture" src="summer-hackathon.jpg" />
+        <div class="introduction">
+          <h2>삼총사</h2>
+          <p>
+            김소정's MBTI: ESTP<br>
+            김지원's MBTI: INFJ<br>
+            이서연's MBTI: INTJ<br>
+            <br>
+            이메일 주소: sojeong22@hufs.ac.kr / harryy5981@hufs.ac.kr / lsy0476@hufs.ac.kr<br>
+          </p>
+        </div>
+      </div>
 
-.img {
-  justify-content: center;
-}
 
-.profile-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: flex-start;
-  margin: 100px 100px;
-}
-
-#profile-picture {
-  width: 400px;
-  margin-right: 60px;
-}
-
-#rabbit-img {
-  width: 150px;
-  height: 150px;
-  border: 1px solid #2B3856;
-  transform: scale(1);
-  border-radius: 70%;
-}
-
-.index {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.index .img {
-  margin-bottom: 50px;
-}
-
-.menu-bar {
-  position: fixed;
-  border: 0;
-  background-color: #2B3856;
-  display: block;
-  width: 250px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 목차 */
-.index h3 {
-  color: white;
-  opacity: 0.7;
-  text-decoration: none;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-/* 목차 각 항목 반응형 커서 */
-.index h3:hover {
-  font-size: 1.1em;
-  opacity: 1;
-  text-shadow: 0.7px 0.7px 0.7px #000;
-}
-
-.frame {
-  margin: 30px 150px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 200px;
-}
-/*profile-section*/
-.introduce-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: flex-start;
-  margin: 100px 100px;
-  padding-left: 200px;
-}
-
-#introduce-picture {
-  width: 400px;
-  margin-right: 60px;
-}
-
-.introduction > h2 {
-  margin: 0px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 35px;
-}
-
-.introduction > p {
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.mbti-types {
-  font-size: 55px;
-  font-weight: 700;
-  font-family: 'Oswald', sans-serif;
-}
-.mbti-imgs {
-  margin-bottom: 20px;
-}
-.mbti-imgs img {
-  width:150px;
-  height: 150px;
-  transition: all 0.3s ease-in-out;
-}
-/* 하단 코멘트 */
-.interests .comment {
-  font-size: 16px;
-  font-style: italic;
-}
+      <section class="mbtis">
+        <header>
+        <p style="margin: 10px;" id="mbti-types"><span style="color: #2B3856;">MBTI IMAGES</span><p>
+        </header>
+        <article>
+          <div class="mbti-imgs">
+            <img src="./mbti_imgs/ENFJ.jpg">
+            <img src="./mbti_imgs/ENTJ.jpg">
+            <img src="./mbti_imgs/ENFP.jpg">
+            <img src="./mbti_imgs/ENTP.jpg">
+            <img src="./mbti_imgs/ESFP.jpg">
+            <img src="./mbti_imgs/ESFJ.jpg">
+            <img src="./mbti_imgs/ESTP.jpg">
+            <img src="./mbti_imgs/ESTJ.jpg">
+            <img src="./mbti_imgs/INFP.jpg">
+            <img src="./mbti_imgs/INFJ.jpg">
+            <img src="./mbti_imgs/INTP.jpg">
+            <img src="./mbti_imgs/ISTP.jpg">
+            <img src="./mbti_imgs/ISFP.jpg">
+            <img src="./mbti_imgs/ISFJ.jpg">
+            <img src="./mbti_imgs/ISTJ.jpg">
+            <img src="./mbti_imgs/INTJ.jpg">
+          </div>
+          <style>
+            .mbti-types {
+              font-size: 55px;
+              font-weight: 700;
+              font-family: 'Oswald', sans-serif;
+            }
+            .mbti-imgs {
+              margin-bottom: 20px;
+            }
+            .mbti-imgs img {
+              width: 150px;
+              height: 150px;
+              transition: all 0.3s ease-in-out;
+            }
+          </style>
+          <p class="comment">이 사진들은 각각의 mbti에 대한 사진들이다.</p>
+        </article>
+      </section>
+      <script>
+        var images = document.querySelectorAll(".mbti-imgs img");
+        images.forEach(function(image) {
+          image.addEventListener("mouseover", function() {
+            // 이미지의 크기를 확대합니다.
+            image.style.transform = "scale(1.2)";
+          });
+          image.addEventListener("mouseout", function() {
+            // 이미지의 크기를 원래 크기로 복원합니다.
+            image.style.transform = "scale(1)";
+          });
+        });
+      </script>
+    </div>
+    <script type="scroll.js"></script>
+  </body>
+</html>
