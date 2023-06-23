@@ -61,22 +61,39 @@
             <img src="./mbti_imgs/ISTJ.jpg">
             <img src="./mbti_imgs/INTJ.jpg">
           </div>
+          
           <style>
-            .mbti-types {
-              font-size: 55px;
-              font-weight: 700;
-              font-family: 'Oswald', sans-serif;
-            }
             .mbti-imgs {
-              margin-bottom: 20px;
-              text-align: center;
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
             }
             .mbti-imgs img {
-              width: 270px;
-              height: 270px;
-              transition: all 0.3s ease-in-out;
+              width: calc(25% - 20px);
+              height: auto;
+              object-fit: cover;
+              margin: 10px;
+              box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+              position: relative;
+              cursor: pointer;
+            }
+            .mbti-imgs img:hover::after {
+              content: attr(alt);
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              background: rgba(0, 0, 0, 0.7);
+              color: #fff;
+              padding: 10px;
+              font-size: 18px;
+              font-weight: bold;
+              box-sizing: border-box;
+              text-align: center;
             }
           </style>
+
+
           <p class="comment">이 사진들은 각각의 mbti에 대한 사진들이다.</p>
         </article>
       </section>
