@@ -115,7 +115,11 @@ body {
   font-style: italic;
 }
 
-.next_button{
+.next_btn_kor{
   border-radius: 100px;
+  border: none;
+}
+
+.next_btn_eng{
   border: none;
 }
