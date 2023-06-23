@@ -5,7 +5,7 @@
   list-style: none;
   padding: 0px;
   color: black;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Jua', sans-serif;
 }
 
 body {
@@ -97,25 +97,20 @@ body {
 
 .introduction > h2 {
   margin: 0px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Jua', sans-serif;
   font-size: 35px;
   color: #2B3856;
 }
 
 .introduction > p {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Jua', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 25px;
   margin-bottom: 50px;
 }
-
-
-
 
 /* 하단 코멘트 */
 .interests .comment {
   font-size: 16px;
   font-style: italic;
 }
-
-
