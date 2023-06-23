@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Jua', sans-serif;
     margin: 0;
     padding: 20px;
+    background-color: #efe7e3;
   }
   
   h1 {
@@ -38,11 +39,12 @@ body {
   }
   
   button {
+    font-family: 'Jua', sans-serif;
     display: block;
     margin: 15px auto;
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4caf50;
+    background-color: #FFA7A7;
     color: white;
     border: none;
     border-radius: 4px;
@@ -50,6 +52,6 @@ body {
   }
   
   button:hover {
-    background-color: #45a049;
+    background-color: #FFA7A7;
   }
   
