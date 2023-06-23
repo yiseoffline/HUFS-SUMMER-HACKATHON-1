@@ -44,20 +44,6 @@ body {
   transform: scale(1);
   border-radius: 70%;
 }
-/*
-.menu-bar {
-  position: fixed;
-  background-color: #2b3856;
-  width: 200px;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  z-index: 1;
-}
-*/
-
 
 .index {
   text-align: center;
@@ -74,7 +60,7 @@ body {
   border: 0;
   background-color: #2B3856;
   display: block;
-  width: 200px;
+  width: 250px;
   height: 100vh;
   display: flex;
   align-items: center;
