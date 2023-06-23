@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <title>설문조사</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <h1>Survey</h1>
+  <form>
+    <div class="question">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="question">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+    </div>
+    <div class="question">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Choose</option>
+        <option value="male">Male</option>
+        <option value="female">Femal</option>
+        <option value="other">Don't want to tell</option>
+      </select>
+    </div>
+    <div class="question">
+      <label for="mbti_type">What is your mbti ? </label>
+      <select id="mbti_type" name="mbti" required>
+        <option value="">Choose</option>
+        <option value="ENFJ">ENFJ</option>
+        <option value="ENTJ">ENTJ</option>
+        <option value="ENFP">ENFP</option>
+        <option value="ENTP">ENTP</option>
+        <option value="ESFP">ESFP</option>
+        <option value="ESFJ">ESFJ</option>
+        <option value="ESTP">ESTP</option>
+        <option value="ESTJ">ESTJ</option>
+        <option value="INFP">INFP</option>
+        <option value="INFJ">INFJ</option>
+        <option value="INTP">INTP</option>
+        <option value="ISTP">ISTP</option>
+        <option value="ISFP">ISFP</option>
+        <option value="ISFJ">ISFJ</option>
+        <option value="ISTJ">ISTJ</option>
+        <option value="INTJ">INTJ</option>
+      </select>
+    </div>
+
+    <div class="question">
+      <p>Do you agree to collect to personal information? </p>
+      <input type="checkbox" id="agreement" name="agreement" required>
+      <label for="agreement">Agree</label>
+    </div>
+    <button id="next" type="next"><a href="../question_pages/question_eng.html">다음</a></button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+  margin: 0px;
+  text-decoration: none;
+  border-collapse: none;
+  list-style: none;
+  padding: 0px;
+  color: black;
+  font-family: 'Jua', sans-serif;
+}
+
+body {
+  background-color: #efe7e3;
+}
+
+#ser_img {
+  margin-left: 10px;
+  display: block;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.img {
+  justify-content: center;
+}
+
+#profile-picture {
+  width: 400px;
+  margin-right: 60px;
+}
+
+#rabbit-img {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #2B3856;
+  transform: scale(1);
+  border-radius: 70%;
+}
+
+.index {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.index .img {
+  margin-bottom: 50px;
+}
+
+.menu-bar {
+  position: fixed;
+  border: 0;
+  background-color: #2B3856;
+  display: block;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 목차 */
+.index h3 {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* 목차 각 항목 반응형 커서 */
+.index h3:hover {
+  font-size: 1.1em;
+  opacity: 1;
+  text-shadow: 0.7px 0.7px 0.7px #000;
+}
+
+.frame {
+  margin: 30px 150px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+}
+/*profile-section*/
+.profile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: flex-start;
+  margin: 100px 100px;
+}
+
+#profile-picture {
+  width: 400px;
+  margin-right: 60px;
+}
+
+.introduction > h2 {
+  margin: 0px;
+  font-family: 'Jua', sans-serif;
+  font-size: 35px;
+  color: #2B3856;
+}
+
+.introduction > p {
+  font-family: 'Jua', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+/* 하단 코멘트 */
+.interests .comment {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.next_btn_kor{
+  border-radius: 100px;
+  border: none;
+}
+
+.next_btn_eng{
+  border: none;
+}
