@@ -114,3 +114,8 @@ body {
   font-size: 16px;
   font-style: italic;
 }
+
+.next_button{
+  border-radius: 100px;
+  border: none;
+}
