@@ -26,7 +26,7 @@
       <div class="profile-section">
         <img id="profile-picture" src="summer-hackathon.jpg" />
         <div class="introduction">
-          <h2>삼총사</h2>
+          <p><span>JENNY</span>&nbsp<span style="color: #2B3856;">YEJEE CHO</span></p>
           <p>
             김소정's MBTI: ESTP<br>
             김지원's MBTI: INFJ<br>
@@ -40,7 +40,7 @@
 
       <section class="mbtis">
         <header>
-        <p style="margin: 10px;" class="mbti-types"><span style="color: #2B3856;">MBTI IMAGES</span><p>
+        <p style="margin: 10px;" id="mbti-types"><span style="color: #2B3856;">MBTI IMAGES</span><p>
         </header>
         <article>
           <div class="mbti-imgs">
@@ -61,9 +61,47 @@
             <img src="./mbti_imgs/ISTJ.jpg">
             <img src="./mbti_imgs/INTJ.jpg">
           </div>
+          <style>
+            .mbti-types {
+              font-size: 55px;
+              font-weight: 700;
+              font-family: 'Oswald', sans-serif;
+            }
+            .mbti-imgs {
+              margin-bottom: 20px;
+              text-align: center;
+            }
+            .mbti-imgs img {
+              width: 270px;
+              height: 270px;
+              transition: all 0.3s ease-in-out;
+            }
+          </style>
           <p class="comment">이 사진들은 각각의 mbti에 대한 사진들이다.</p>
         </article>
       </section>
+      <script>
+        var images = document.querySelectorAll(".mbti-imgs img");
+        images.forEach(function(image) {
+          image.dataset.originalWidth = image.width;
+          image.dataset.originalHeight = image.height;
+        });
+
+        images.forEach(function(image) {
+          image.addEventListener("mouseover", function() {
+            // 이미지를 확대합니다.
+            image.style.transform = "scale(1.2)";
+          });
+
+        image.addEventListener("mouseout", function() {
+          // 이미지를 축소합니다.
+          image.style.transform = "scale(1)";
+          // 이미지의 기본 크기로 설정합니다.
+          image.width = image.dataset.originalWidth;
+          image.height = image.dataset.originalHeight;
+        });
+      });
+    </script>
     </div>
     <script type="scroll.js"></script>
   </body>
